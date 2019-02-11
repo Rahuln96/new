@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+</head>
+<style>
+ .steps{
+     list-style: none;
+ } 
+ .steps li{
+     display: inline;
+     float: left;
+     width: 100px;
+     margin: 20ppx;
+     padding: 5px;
+     color:blanchedalmond;
+     background-color: black;
+     border: 1px solid #000000;
+ }
+ .steps .on{
+     border: 1px solid #666666; background-color: #efefef;
+     color: #000000;
+     background-color: #ffffff;
+ }
+
+.form{
+    background-color: darkgray;
+    width: 100%;
+
+
+}
+
+
+</style>
+<body>
+
+ <form action="" method="GET" class="form">
+     
+    <fieldset>
+            <ul class="steps">
+                    <li>Steps 1 of 3</li>
+                    <li class="on">Step 2 of 3</li>
+                    <li>Step 3 of 3</li>
+            
+                </ul><br><br>
+       <legend>Your Address </legend>
+       <label for="address1">Address1: <span class="required">*</span></label>
+       <div class="input">
+       <input type="text" name="textAddress1" id="address1" size="20"/>
+       
+    </div>
+    <label for="address2">Address2: <span class="required">*</span></label>
+    <div class="input">
+    <input type="text" name="textAddress2" id="address2" size="20"/>
+    
+ </div>
+ <label for="address1">Town/ Subrub:</label>
+ <div class="input">
+ <input type="text" name="textAddress1" id="address1" size="20"/>
+ 
+</div>
+<label for="address1">City <span class="required">*</span></label>
+<div class="input">
+<input type="text" name="textAddress1" id="address1" size="20"/>
+
+</div>
+<label for="address1">ZIP Code</label>
+<div class="input">
+<input type="text" name="textAddress1" id="address1" size="20"/>
+
+</div>
+
+<br class="clear"/>
+<span class="back"><input type="submit" value="back"></span>
+<span class="next"><input type="submit" value="proceed"></span>
+    </fieldset>
+ </form>
+    
+</body>
+</html>
